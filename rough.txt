@@ -1,0 +1,15 @@
+revise
+setAttribute
+getcomputedstyle
+getpropertyvalue
+createobjecturl
+
+tool.strokeStyle="red"; //to change colors
+tool.lineWidth="3";
+
+ tool.beginPath(); // new graphic path (line)
+ tool.moveTo(10, 10); //start point
+ tool.lineTo(100, 150); //end point
+ tool.stroke(); //to fill the colors
+
+ canvas.toDataURL // to get the url link of board
