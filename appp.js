@@ -5,7 +5,7 @@ const socket = require("socket.io");
 
 app.use(express.static("public"));
 
-let port=process.env.Port||3300;
+let port=process.env.PORT||3300;
 let server =app.listen(port,() =>
 {
     console.log(`listing to port"+ ${port}`);
