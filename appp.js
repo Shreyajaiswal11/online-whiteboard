@@ -12,7 +12,7 @@ let server =app.listen(port,() =>
 })
 const io= socket(server ,{
     cors:{
-        origin:'http://localhost:3300',
+        origin:'https://my-online-whiteboard.herokuapp.com',
         methods:['GET','POST']
     }
 });
