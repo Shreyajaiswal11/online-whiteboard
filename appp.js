@@ -10,7 +10,12 @@ let server =app.listen(port,() =>
 {
     console.log(`listing to port"+ ${port}`);
 })
-const io= socket(server);
+const io= socket(server ,{
+    cors:{
+        origin:'http://localhost:3300',
+        methods:['GET','POST']
+    }
+});
 
 io.on("connection",(socket) =>{
     console.log("made socket connection");
