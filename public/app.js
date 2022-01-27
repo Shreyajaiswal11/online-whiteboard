@@ -107,7 +107,7 @@ eraser.addEventListener('click', (e)=>{
         Noteaction(minimize, remove, cont)
 
            cont.onmousedown=function(event){
-            dragAndDrop(cont,e)
+            dragAndDrop(cont,event)
            };
            cont.ondragstart=function (){
                return false;
